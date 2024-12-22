@@ -1,1 +1,13 @@
-<p>task-board-page works!</p>
+<!DOCTYPE html>
+
+<div class="flex flex-col items-center h-screen">
+    <h1 class="outfit-title">My Task Board</h1>
+    <h2 class="outfit-description">Tasks to keep organised</h2>
+</div>
+
+<div *ngFor="let task of tasks">
+    <app-task>
+
+        
+    </app-task>
+</div>
