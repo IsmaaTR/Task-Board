@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 
-<div class="flex flex-col items-center h-screen">
+<div class="flex flex-col items-center">
     <h1 class="outfit-title">My Task Board</h1>
     <h2 class="outfit-description">Tasks to keep organised</h2>
 </div>
 
-<div *ngFor="let task of tasks">
-    <app-task>
-
-        
-    </app-task>
+<div class="flex items-center" *ngFor="let task of tasks">
+    <app-task [task]="task" class="mb-5"/>
 </div>

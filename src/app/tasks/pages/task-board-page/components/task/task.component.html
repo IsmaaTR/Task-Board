@@ -1,1 +1,13 @@
-<p>task works!</p>
+<div *ngIf="task != undefined" class="task-card flex items-center p-4 rounded-lg shadow-md w-full"
+      [ngClass]="{
+        'background-toDo': task.status == 'To-do',
+        'background-inProgress': task.status == 'In progress',
+        'background-completed': task.status == 'Completed',
+        'background-wontDo': task.status == 'Won\'t do',
+      }">
+    <!-- Detalles de la tarea -->
+    <div>
+      <h3 class="outfit-taskTitle">{{ task.name }}</h3>
+      <p class="outfit-taskDescription">{{ task.description }}</p>
+    </div>
+  </div>

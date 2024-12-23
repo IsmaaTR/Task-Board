@@ -9,6 +9,34 @@ import { Task } from '../../interfaces/task.interface';
 export class TaskBoardPageComponent {
 
   //Atributos de la clase
-  public tasks: Task[] = [ ];
-
+  public tasks: Task[] = [ 
+    {
+      id: 1,
+      name: 'Tarea de prueba 1',
+      description: 'Por hacer',
+      icon: 'Estudio',
+      status: 'To-do'
+    },
+    {
+      id: 2,
+      name: 'Tarea de prueba 2',
+      description: 'En progreso',
+      icon: 'Estudio',
+      status: 'In progress'
+    },
+    {
+      id: 3,
+      name: 'Tarea de prueba 3',
+      description: 'Hecha',
+      icon: 'Estudio',
+      status: 'Completed'
+    },
+    {
+      id: 4,
+      name: 'Tarea de prueba 4',
+      description: 'No la haré',
+      icon: 'Estudio',
+      status: 'Won\'t do'
+    },
+  ];
 }
